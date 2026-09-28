@@ -83,7 +83,10 @@ button { font: inherit; }
   min-height: 610px;
   padding: 0 7.1%;
   overflow: hidden;
-  background: var(--deep);
+  background:
+    linear-gradient(90deg, rgba(16, 29, 27, .72) 0%, rgba(16, 29, 27, .58) 43%, rgba(16, 29, 27, .32) 100%),
+    linear-gradient(0deg, rgba(16, 29, 27, .2), rgba(16, 29, 27, .2)),
+    url("https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1600") center / cover no-repeat;
   color: var(--white);
 }
 .hero-copy { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 76px 36px 86px 0; }
@@ -110,7 +113,7 @@ button { font: inherit; }
   align-self: stretch;
   min-height: 610px;
   margin: 0 -8.4vw 0 10px;
-  background: #26332e url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1500&q=85") center / cover no-repeat;
+  background: transparent;
 }
 .visual-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(16, 29, 27, .28), rgba(16, 29, 27, .03) 42%, rgba(16, 29, 27, .22)), linear-gradient(0deg, rgba(16, 29, 27, .57), transparent 48%); }
 .visual-tag { position: absolute; top: 26px; right: 8.5vw; display: flex; align-items: center; gap: 9px; padding: 9px 11px; border: 1px solid rgba(255, 255, 255, .35); background: rgba(16, 29, 27, .32); color: white; font-family: var(--mono); font-size: 8px; letter-spacing: .06em; }
@@ -204,7 +207,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #79944a; outline-offs
   .primary-navigation a { padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
   .primary-navigation a::after { display: none; }
 
-  .hero { display: flex; min-height: auto; flex-direction: column; padding: 0; }
+  .hero { display: flex; min-height: auto; flex-direction: column; padding: 0; background-position: center, center, 92% center; }
   .hero-copy { min-height: 477px; padding: 63px 25px 77px; }
   .hero .eyebrow { font-size: 9px; }
   .hero h1 { margin-top: 29px; font-size: clamp(42px, 12vw, 56px); }
